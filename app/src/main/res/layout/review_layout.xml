@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="P"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@color/splash_background"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:text="Pradeep Kumar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Rated"/>
+        <TextView
+            android:id="@+id/rated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textColor="@color/splash_background"
+            android:text="4.5"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:text="Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to Hello all this is a dummy text to "/>
+</LinearLayout>

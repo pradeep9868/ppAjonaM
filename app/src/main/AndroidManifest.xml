@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.manojapp" >
+    <uses-permission android:name="com.app.manojapp.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <application
+        android:name="com.app.manojapp.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/toilet_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Goolge API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAcRU7vZ8WBHgclhkjJ_vNRzAiAiQ7aThI" />
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectCat"
+            android:label="@string/title_activity_select_cat" >
+        </activity>
+        <activity
+            android:name=".SearchLocality"
+            android:label="@string/title_activity_search_locality"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".CatalogPage"
+            android:label="@string/title_activity_catalog_page"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name=".MapView"
+            android:label="@string/title_activity_map_view" >
+        </activity>
+        <activity
+            android:name=".Add_New"
+            android:label="@string/add_new" >
+        </activity>
+        <activity
+            android:name=".Details"
+            android:label="@string/add_new" >
+        </activity>
+        <activity
+            android:name=".Reviews"
+            android:label="@string/add_new" >
+        </activity>
+        <activity
+            android:name=".Add_Review"
+            android:label="@string/add_new" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,107 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="1dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.app.manojapp.customcomponents.MyImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#aaa"
+            android:scaleType="fitXY" >
+        </com.app.manojapp.customcomponents.MyImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_gravity="right|top"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.app.manojapp.customcomponents.TextView_Appcolor
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rating"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/splash_background"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="15dp">
+            <com.app.manojapp.customcomponents.TextView_White
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recy"
+                android:textSize="22sp"
+                android:layout_marginLeft="10dp"
+                />
+            <com.app.manojapp.customcomponents.TextView_White
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sweep"
+                android:textSize="22sp"
+                android:layout_marginLeft="10dp"
+                />
+            </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_width="wrap_content"
+            android:text="D Block,Saket, New Delhi 11067"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/review_photo"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="180 Reviews | 6 Photos"/>
+        </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

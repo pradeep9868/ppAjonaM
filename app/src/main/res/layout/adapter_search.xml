@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center">
+    <com.app.manojapp.customcomponents.TextView_Black
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="@string/search"
+        android:textSize="22sp"
+        android:gravity="center"/>
+   <TextView
+       android:id="@+id/text"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Saket"
+       android:textSize="17sp"
+       android:textColor="@color/black"
+       android:layout_marginLeft="10dp"
+       android:layout_weight="1"/>
+</LinearLayout>
